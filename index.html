@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AquaPulse — Smart Water Bottle for University Students</title>
+
+  <!-- Google font for professional typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="AquaPulse home">
+        <svg class="brand-logo" width="44" height="44" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="gA" x1="0" x2="1">
+              <stop offset="0" stop-color="#26c1b0" />
+              <stop offset="1" stop-color="#4dd6a0" />
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="12" fill="url(#gA)"></rect>
+          <path d="M22 20c0-4 6-6 10-6s10 2 10 6-4 14-10 18C26 34 22 24 22 20z" fill="#fff" opacity="0.95"/>
+        </svg>
+        <span class="brand-name">AquaPulse</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+          <span class="hamburger"></span>
+        </button>
+
+        <ul id="main-nav" class="nav-list" role="menu">
+          <li role="none"><a role="menuitem" href="#features">Features</a></li>
+          <li role="none"><a role="menuitem" href="#benefits">Benefits</a></li>
+          <li role="none"><a role="menuitem" href="#use-cases">Use Cases</a></li>
+          <li role="none"><a role="menuitem" href="#pricing">Pricing</a></li>
+          <li role="none"><a role="menuitem" href="#testimonials">Testimonials</a></li>
+          <li role="none"><a class="btn btn-primary" id="cta-buy" href="#pricing">Buy Now ₹1,999</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="hero-title">Stay Hydrated. Stay Focused.</h1>
+          <p class="hero-sub">AquaPulse is the smart water bottle designed for university students — gentle reminders, temperature sensing, and long battery life to keep you on top of your day.</p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-large" id="hero-buy" href="#pricing">Buy Now — ₹1,999</a>
+            <a class="btn btn-outline" href="#features">See Features</a>
+          </div>
+
+          <ul class="hero-badges" aria-hidden="true">
+            <li>USB-C Fast Charge</li>
+            <li>Campus-friendly design</li>
+            <li>1-year limited warranty</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="false">
+          <!-- SVG placeholder product illustration (no external images) -->
+          <div class="product-visual">
+            <svg viewBox="0 0 200 400" class="bottle" role="img" aria-label="AquaPulse bottle illustration">
+              <defs>
+                <linearGradient id="waterG" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#7be3df"/>
+                  <stop offset="1" stop-color="#3bb3a2"/>
+                </linearGradient>
+                <linearGradient id="glassG" x1="0" x2="1">
+                  <stop offset="0" stop-color="#eaf9f7"/>
+                  <stop offset="1" stop-color="#d9f2ef"/>
+                </linearGradient>
+              </defs>
+
+              <rect x="40" y="18" width="120" height="360" rx="26" fill="url(#glassG)"/>
+              <rect x="70" y="0" width="60" height="24" rx="6" fill="#4dd6a0"/>
+
+              <path d="M60 260 C80 300, 120 300, 140 260 L140 340 C120 360, 80 360, 60 340 Z" fill="url(#waterG)" opacity="0.95"/>
+
+              <g transform="translate(100,160)">
+                <rect x="-34" y="-38" width="68" height="76" rx="10" fill="rgba(255,255,255,0.06)"></rect>
+                <polyline points="-40,18 -20,-10 -4,22 12,-36 40,12" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+
+            <div class="visual-tag">AquaPulse • Student Edition</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Features</h2>
+          <p class="section-sub">Smart features crafted to fit student life and routines.</p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="#1aa99a" d="M12 2a1 1 0 011 1v1a1 1 0 01-2 0V3a1 1 0 011-1zm6.3 3.7l.7.7a1 1 0 01-1.4 1.4l-.7-.7a8 8 0 10-9.9 13.9 1 1 0 01.3-1.9A6 6 0 1118 7.7a1 1 0 011.3-1zM11 7h2v6h-2z"/></svg>
+            </div>
+            <h3>Smart Reminders</h3>
+            <p>Schedule hydration cues around your classes and study blocks — subtle vibrations and LED cues help build consistent habits.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="#1aa99a" d="M14 14.76V6a4 4 0 10-4 0v8.76A6 6 0 1014 14.76zM12 22a4 4 0 01-2-7.46V6a2 2 0 114 0v8.54A4 4 0 0112 22z"/></svg>
+            </div>
+            <h3>Temperature Sensor</h3>
+            <p>Instant color-coded feedback so you know if your drink is ready — cold water or warm tea at a glance.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="#1aa99a" d="M16 7V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2v-1h1a1 1 0 001-1V8a1 1 0 00-1-1h-1zM6 6h8v12H6V6z"/></svg>
+            </div>
+            <h3>Long Battery</h3>
+            <p>USB-C charging for fast top-ups and up to two weeks of everyday use on a single charge.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="#1aa99a" d="M12 6V4l4 4-4 4V8a4 4 0 100 8 4 4 0 01-3.9-3H6.1A6 6 0 0012 20a6 6 0 001-11.9V6z"/></svg>
+            </div>
+            <h3>App Sync & Analytics</h3>
+            <p>Optional companion app for progress tracking, streaks, and friendly campus challenges.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Benefits</h2>
+          <p class="section-sub">Small changes, big effects — hydration supports focus and wellbeing.</p>
+        </header>
+
+        <div class="benefits-grid">
+          <div class="benefit">
+            <h4>Better Focus</h4>
+            <p>Staying hydrated supports cognitive performance during study sessions and exams.</p>
+          </div>
+          <div class="benefit">
+            <h4>Improved Wellness</h4>
+            <p>Daily habits tracked easily: see progress and build healthy routines while at college.</p>
+          </div>
+          <div class="benefit">
+            <h4>Built for Campus</h4>
+            <p>Matte finish, light weight, leak-resistant lid — designed to fit backpacks and cup holders.</p>
+          </div>
+          <div class="benefit">
+            <h4>Quiet & Discreet</h4>
+            <p>Subtle notifications keep reminders library-friendly and non-disruptive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use cases -->
+    <section id="use-cases" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Student-Focused Use Cases</h2>
+          <p class="section-sub">How AquaPulse fits into real student days.</p>
+        </header>
+
+        <div class="usecases">
+          <div class="usecase">
+            <h3>Before Exam Week</h3>
+            <p>Program reminders for long study runs and keep hydration steady during intense review.</p>
+          </div>
+          <div class="usecase">
+            <h3>Morning Lectures</h3>
+            <p>Quick reminders between back-to-back classes help keep energy and focus up.</p>
+          </div>
+          <div class="usecase">
+            <h3>Sports & Clubs</h3>
+            <p>Durable design and secure lid for practice sessions and on-the-go campus activities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section highlight">
+      <div class="container pricing-inner">
+        <header class="section-header">
+          <h2>Pricing</h2>
+          <p class="section-sub">Launch price for students — simple, one-time purchase.</p>
+        </header>
+
+        <div class="pricing-cards">
+          <div class="pricing-main">
+            <div class="pill">Launch</div>
+            <h3>AquaPulse • Student Edition</h3>
+            <div class="price">₹1,999</div>
+            <ul class="price-list">
+              <li>Smart reminders</li>
+              <li>Temperature sensor</li>
+              <li>USB-C fast charge</li>
+              <li>1-year limited warranty</li>
+            </ul>
+            <div class="pricing-ctas">
+              <button class="btn btn-primary" id="buy-now">Buy Now — ₹1,999</button>
+              <a class="btn btn-outline" href="#testimonials">See Reviews</a>
+            </div>
+          </div>
+
+          <aside class="pricing-side">
+            <h4>What's included</h4>
+            <p>Premium bottle, companion app access, and student support. Free standard shipping for campus addresses at launch.</p>
+            <a class="link-muted" href="#footer">Shipping & returns</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Student Testimonials</h2>
+          <p class="muted">The testimonials below are fictional/sample content created for demo purposes.</p>
+        </header>
+
+        <div class="testimonials-wrap">
+          <button class="test-btn prev" aria-label="Previous testimonial">‹</button>
+          <div class="test-track" aria-live="polite" role="region">
+            <blockquote class="testimonial">
+              <p>"AquaPulse helped me actually drink more during finals week — the reminders were subtle and perfect for library study sessions."</p>
+              <cite>— Priya, Computer Science (Fictional sample)</cite>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p>"The temperature sensor is a small detail that makes a big difference—my tea stays warm during lab runs."</p>
+              <cite>— Ankit, Engineering (Fictional sample)</cite>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <p>"Battery life is fantastic and the bottle fits cleanly in my backpack. Practical and good-looking."</p>
+              <cite>— Maya, Design Student (Fictional sample)</cite>
+            </blockquote>
+          </div>
+          <button class="test-btn next" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-final">
+      <div class="container cta-inner">
+        <div>
+          <h2>Ready to make hydration effortless?</h2>
+          <p>Join students staying sharp with AquaPulse.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#pricing">Buy AquaPulse — ₹1,999</a>
+          <a class="btn btn-outline" href="#features">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>AquaPulse</strong>
+        <p class="muted">Smart Water Bottle • Student Edition</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+      </nav>
+
+      <div class="footer-legal muted">
+        © 2026 AquaPulse — fictional product for demo. Testimonials are sample/fictional content.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal (demo purchase) -->
+  <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-card" role="document">
+      <button class="modal-close" aria-label="Close dialog">✕</button>
+      <h3 id="modal-title">Demo Checkout</h3>
+      <p>You are purchasing <strong>AquaPulse • Student Edition</strong> for <strong>₹1,999</strong>.</p>
+      <p class="muted">This is a demo — checkout is not active.</p>
+      <div class="modal-actions">
+        <button class="btn btn-primary" id="confirm-purchase">Proceed (Demo)</button>
+        <button class="btn btn-outline modal-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

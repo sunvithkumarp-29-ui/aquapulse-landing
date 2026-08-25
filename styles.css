@@ -1,0 +1,168 @@
+/* AquaPulse — Modern landing page styles
+   Clean and commented for students to follow.
+*/
+
+:root{
+  --bg-1: #f7fcfb;
+  --bg-2: #ffffff;
+  --text: #052031;
+  --muted: #6b7780;
+  --accent: #1aa99a;
+  --accent-2: #4dd6a0;
+  --card: #ffffff;
+  --glass: rgba(255,255,255,0.6);
+  --shadow-md: 0 10px 30px rgba(12,20,28,0.08);
+  --radius: 14px;
+  --container: 1100px;
+  --ease: cubic-bezier(.2,.9,.3,1);
+}
+
+/* Base */
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg-1), #fbfeff 60%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  font-size:16px;
+}
+
+/* Utility container */
+.container{
+  width:90%;
+  max-width:var(--container);
+  margin:0 auto;
+}
+
+/* Header / Nav */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.7);
+  border-bottom: 1px solid rgba(6,18,30,0.04);
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:14px 0;
+}
+
+.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;color:inherit}
+.brand-logo{border-radius:8px}
+.brand-name{font-weight:700;letter-spacing:0.2px}
+
+/* Nav list */
+.nav{margin-left:auto;display:flex;align-items:center;gap:0.6rem}
+.nav-list{display:flex;gap:.5rem;list-style:none;margin:0;padding:0;align-items:center}
+.nav-list a{color:var(--text);text-decoration:none;padding:.55rem .8rem;border-radius:10px;font-weight:600;transition:background .18s var(--ease)}
+.nav-list a:hover{background:rgba(26,169,154,0.06)}
+.nav-toggle{display:none;background:transparent;border:0;padding:.4rem;border-radius:8px;cursor:pointer}
+.hamburger{display:block;width:26px;height:2px;background:var(--text);position:relative}
+.hamburger::before,.hamburger::after{content:"";position:absolute;left:0;width:26px;height:2px;background:var(--text);transition:transform .22s var(--ease)}
+.hamburger::before{top:-7px} .hamburger::after{top:7px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.6rem 1rem;border-radius:10px;font-weight:700;border:0;cursor:pointer;text-decoration:none}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;box-shadow:0 8px 30px rgba(34,193,176,0.12);transition:transform .22s var(--ease), box-shadow .22s var(--ease)}
+.btn-primary:hover{transform:translateY(-4px);box-shadow:0 18px 60px rgba(34,193,176,0.14)}
+.btn-outline{background:transparent;border:1px solid rgba(6,18,30,0.06);color:var(--muted);padding:.55rem .85rem;border-radius:10px}
+.btn-large{padding:0.95rem 1.1rem;font-size:1rem}
+
+/* Hero */
+.hero{padding:48px 0 28px}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center}
+.hero-copy{max-width:680px}
+.hero-title{margin:0 0 12px;font-size:2.6rem;line-height:1.02;letter-spacing:-0.02em}
+.hero-sub{margin:0 0 18px;color:var(--muted);font-size:1.05rem}
+.hero-ctas{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.hero-badges{display:flex;gap:12px;list-style:none;padding:0;margin:0;color:var(--muted);font-weight:700}
+.hero-badges li{background:rgba(26,169,154,0.06);padding:.4rem .7rem;border-radius:999px;font-size:.9rem}
+
+/* Product visual */
+.product-visual{background:var(--card);border-radius:18px;padding:18px;display:flex;flex-direction:column;align-items:center;box-shadow:var(--shadow-md);border:1px solid rgba(6,18,30,0.03)}
+.bottle{width:240px;height:auto}
+.visual-tag{margin-top:8px;color:var(--muted);font-weight:700}
+
+/* Sections */
+.section{padding:44px 0}
+.alt{background:linear-gradient(180deg,#fff,#fbfeff)}
+.section-header{margin-bottom:20px}
+.section-header h2{margin:0 0 6px;font-size:1.4rem}
+.section-sub{margin:0;color:var(--muted)}
+
+/* Features grid */
+.features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.feature-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow-md);transition:transform .22s var(--ease), box-shadow .22s var(--ease);border:1px solid rgba(6,18,30,0.03)}
+.feature-card:hover{transform:translateY(-8px);box-shadow:0 28px 80px rgba(10,30,40,0.08)}
+.feature-icon{width:56px;height:56px;border-radius:12px;background:linear-gradient(180deg,rgba(26,169,154,0.06),rgba(77,214,160,0.03));display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+
+/* Benefits */
+.benefits-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.benefit{background:var(--card);padding:16px;border-radius:12px;box-shadow:var(--shadow-md);border:1px solid rgba(6,18,30,0.03)}
+
+/* Use cases */
+.usecases{display:flex;gap:12px;flex-wrap:wrap}
+.usecase{flex:1 1 260px;background:linear-gradient(180deg,#fff,#fbfffe);padding:14px;border-radius:12px;border:1px solid rgba(6,18,30,0.03);box-shadow:var(--shadow-md)}
+
+/* Pricing */
+.pricing-inner{padding-bottom:8px}
+.pricing-cards{display:grid;grid-template-columns:360px 1fr;gap:18px;align-items:start}
+.pricing-main{background:linear-gradient(180deg,#fff,#f9fffb);padding:20px;border-radius:14px;box-shadow:var(--shadow-md);border:1px solid rgba(6,18,30,0.03);position:relative}
+.pill{position:absolute;right:14px;top:14px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;padding:.35rem .6rem;border-radius:999px;font-weight:800;font-size:.82rem}
+.price{font-size:2.1rem;font-weight:900;margin:10px 0}
+.price-list{margin:0;padding-left:1.2rem;color:var(--muted)}
+.pricing-ctas{display:flex;gap:10px;margin-top:14px;align-items:center}
+.pricing-side{background:var(--card);padding:16px;border-radius:12px;box-shadow:var(--shadow-md);border:1px solid rgba(6,18,30,0.03)}
+
+/* Testimonials */
+.testimonials-wrap{display:flex;align-items:center;gap:12px}
+.test-track{display:flex;overflow:hidden;flex:1;scroll-behavior:smooth;transition:transform .45s var(--ease);} 
+.testimonial{min-width:100%;background:var(--card);padding:16px;border-radius:12px;box-shadow:var(--shadow-md);border:1px solid rgba(6,18,30,0.03);margin:0}
+.testimonial p{margin:0 0 10px}
+.testimonial cite{display:block;color:var(--muted);font-weight:700}
+
+/* CTA final */
+.cta-final{padding:28px 0;background:linear-gradient(90deg,#f5fffb,#ffffff)}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(90deg,#ffffff,#f8fffb);padding:18px;border-radius:12px;box-shadow:var(--shadow-md);border:1px solid rgba(6,18,30,0.03)}
+.cta-actions{display:flex;gap:10px;align-items:center}
+
+/* Footer */
+.site-footer{padding:24px 0;border-top:1px solid rgba(6,18,30,0.04);background:linear-gradient(180deg,#fbfeff,#f8fffb)}
+.footer-inner{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.footer-nav a{margin-right:10px;color:var(--muted);text-decoration:none;font-weight:700}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(3,12,20,0.45);z-index:70}
+.modal[aria-hidden="false"]{display:flex}
+.modal-card{background:var(--card);padding:18px;border-radius:12px;max-width:420px;width:92%;box-shadow:0 20px 60px rgba(3,14,30,0.35);position:relative}
+.modal-close{position:absolute;right:10px;top:10px;background:transparent;border:0;font-size:1.05rem;cursor:pointer}
+.modal-actions{display:flex;gap:10px;margin-top:12px}
+
+/* Responsive adjustments */
+@media (max-width:980px){
+  .hero-inner{grid-template-columns:1fr;gap:20px}
+  .features-grid{grid-template-columns:1fr}
+  .benefits-grid{grid-template-columns:1fr}
+  .pricing-cards{grid-template-columns:1fr}
+  .nav-list{display:none;position:absolute;right:14px;top:64px;background:var(--card);padding:12px;border-radius:12px;flex-direction:column;box-shadow:var(--shadow-md);min-width:200px}
+  .nav-toggle{display:block}
+  .cta-actions{flex-direction:column;align-items:flex-start}
+  .test-track{min-height:140px}
+}
+
+@media (max-width:520px){
+  .brand-name{display:none}
+  .hero-title{font-size:1.6rem}
+  .hero-sub{font-size:0.98rem}
+  .btn-primary{padding:.55rem .9rem}
+  .product-visual{padding:12px}
+}
